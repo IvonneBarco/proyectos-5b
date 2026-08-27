@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">5B</a>
@@ -33,27 +34,68 @@
         </div>
     </nav>
 
+    <!-- Contenido Principal -->
     <div class="container text-center mt-4">
         <div class="row">
             <div class="col">
                 <h1>ESTUDIANTES</h1>
             </div>
         </div>
-        <div class="row mt-5" <div class="col">
 
-            <div class="card" style="width: 18rem;">
-                <img src="https://i.etsystatic.com/32047458/r/il/a4b6a3/4983464354/il_fullxfull.4983464354_iu1a.jpg"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">David Aza</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex, harum
-                        deserunt
-                        consequuntur provident, architecto numquam temporibus perferendis delectus sapiente quibusdam.
-                        Repudiandae esse id, laudantium quia qui possimus enim molestias?</p>
-                    <a href="https://i.etsystatic.com/32047458/r/il/a4b6a3/4983464354/il_fullxfull.4983464354_iu1a.jpg"
-                        class="btn btn-primary">Mi perfil</a>
+        <!-- Fila contenedora de Tarjetas -->
+        <div class="row mt-5 justify-content-center g-4">
+            
+            <!-- Tarjeta 1: Benjamin Andres Urbano Zuñiga -->
+            <div class="col-auto">
+                <div class="card text-start" style="width: 18rem; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); overflow: hidden;">
+                    <!-- Encabezado -->
+                    <div style="background: linear-gradient(135deg, #3b82f6, #2563eb); padding: 2rem 1.5rem; text-align: center; color: white;">
+                        <div style="width: 80px; height: 80px; background: rgba(255,255,255,0.2); border-radius: 12px; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 32px;">
+                            👤
+                        </div>
+                        <h2 style="margin: 0.5rem 0; font-size: 18px;">Benjamin Andres Urbano Zuñiga</h2>
+                        <p style="margin: 0.25rem 0; font-size: 13px;">Codigo estudiante: 924331</p>
+                    </div>
+
+                    <!-- Contenido -->
+                    <div class="card-body">
+                        <div style="margin-bottom: 1.25rem;">
+                            <label style="font-size: 12px; color: #666; font-weight: 500; display: block; margin-bottom: 0.4rem;">CARRERA</label>
+                            <p class="card-text" style="margin: 0; font-weight: 500;">Ingeniería de Software</p>
+                        </div>
+
+                        <div style="margin-bottom: 1.25rem;">
+                            <label style="font-size: 12px; color: #666; font-weight: 500; display: block; margin-bottom: 0.4rem;">SEMESTRE</label>
+                            <p class="card-text" style="margin: 0; font-weight: 500;">5to Semestre</p>
+                        </div>
+
+                        <div style="margin-bottom: 1.25rem;">
+                            <label style="font-size: 12px; color: #666; font-weight: 500; display: block; margin-bottom: 0.4rem;">CORREO</label>
+                            <p class="card-text" style="margin: 0; font-size: 13px;">benjamin.urbano@campusucc.edu.co</p>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="font-size: 12px; color: #666; font-weight: 500; display: block; margin-bottom: 0.4rem;">TELÉFONO</label>
+                            <p class="card-text" style="margin: 0; font-size: 13px;">+57 314 432 07 25</p>
+                        </div>
+
+                        <a href="https://github.com/benjamin-urbano" target="_blank" class="btn btn-primary" style="width: 100%;">ir a GitHub</a>
+                    </div>
                 </div>
             </div>
+
+            <!-- Tarjeta 2: David Aza -->
+            <div class="col-auto">
+                <div class="card text-start" style="width: 18rem; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+                    <img src="https://i.etsystatic.com/32047458/r/il/a4b6a3/4983464354/il_fullxfull.4983464354_iu1a.jpg" class="card-img-top" alt="David Aza">
+                    <div class="card-body">
+                        <h5 class="card-title">David Aza</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex, harum deserunt consequuntur provident, architecto numquam temporibus perferendis delectus sapiente quibusdam. Repudiandae esse id, laudantium quia qui possimus enim molestias?</p>
+                        <a href="https://i.etsystatic.com/32047458/r/il/a4b6a3/4983464354/il_fullxfull.4983464354_iu1a.jpg" target="_blank" class="btn btn-primary" style="width: 100%;">Mi perfil</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
