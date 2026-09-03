@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Camilo Bolaños Arturo | Proyecto 5B</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .project-cover {
+            min-height: 260px;
+            max-height: 420px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">5B</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="./proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./estudiantes.html">Estudiantes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container text-center py-4">
+        <h1 class="mb-4">Camilo Bolaños Arturo</h1>
+        <div class="border rounded bg-light p-2 mb-4">
+            <img src="assets/camoooo.jpeg" class="img-fluid project-cover" alt="Camilo Bolaños Arturo">
+        </div>
+
+        <section class="mx-auto mb-5 text-start" style="max-width: 760px;">
+            <h2 class="h4">Sobre el proyecto</h2>
+            <p>Vamos a hacer un proyecto en Nest.js el cual recibe una URL larga, genera un código único de 6 caracteres
+                y lo guarda en memoria relacionándolo con la URL original. Cuando alguien visita ese código, el servidor
+                lo busca y lo <strong>redirige automáticamente (HTTP 302)</strong> hacia la página web original.</p>
+            <p><strong><code>POST /shorten</code>:</strong> recibe la URL larga en el cuerpo de la petición (JSON),
+                genera el código aleatorio, lo almacena en memoria y responde con la nueva URL acortada.</p>
+            <p class="mb-0"><strong><code>GET /:code</code>:</strong> busca el código en memoria. Si lo encuentra,
+                responde con un código de estado <code>302 Found</code> para redirigir la navegación hacia la URL original.
+                Si no existe, devuelve un error <code>404 Not Found</code>.</p>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="h4 mb-4">Integrantes</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <article class="card h-100"><div class="card-body">
+                        <h3 class="h6">Camilo Bolaños Arturo</h3>
+                        <a class="btn btn-sm btn-outline-secondary mt-3" href="https://github.com/Arthuroxx"
+                            target="_blank" rel="noopener noreferrer">Git</a>
+                    </div></article>
+                </div>
+            </div>
+        </section>
+
+        <div class="d-flex flex-column align-items-center gap-2">
+            <a class="btn btn-primary" href="./camilo-arturo.html">Más detalles</a>
+            <a class="btn btn-outline-primary" href="./proyectos.html">Regresar</a>
+        </div>
+    </main>
+</body>
+
+</html>
