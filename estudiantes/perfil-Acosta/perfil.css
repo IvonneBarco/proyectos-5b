@@ -1,0 +1,159 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f2f2f2;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.window {
+  width: 420px;
+  background: #ffffff;
+  border: 1px solid #222;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.titlebar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #222;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #222;
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #222;
+}
+
+.content {
+  padding: 32px 28px 28px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin: 0 0 28px;
+  color: #222;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 16px;
+  border: 1px solid #222;
+  border-radius: 50%;
+  background-image: url('https://raulperez.tieneblog.net/wp-content/uploads/2015/09/tux.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.username {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.username-line {
+  width: 60%;
+  margin: 6px auto 24px;
+  border: none;
+  border-bottom: 1px solid #222;
+}
+
+.desc-label {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #666;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.description {
+  text-align: left;
+  border: 1px solid #222;
+  border-radius: 2px;
+  min-height: 70px;
+  padding: 10px 12px;
+  font-size: 12px;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+.section-label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #222;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.links {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.link-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid #222;
+  border-radius: 3px;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: #222;
+  cursor: pointer;
+  background: #fff;
+  text-decoration: none;
+}
+
+.link-box:hover {
+  background: #f0f0f0;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #222;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.icon.round { border-radius: 50%; }
+
+.back-btn {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #222;
+  background: #fff;
+  padding: 8px 26px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #222;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #f0f0f0;
+}
