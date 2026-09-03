@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HidroMon - Sistema de Monitoreo de Humedad IoT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">5B</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../estudiantes.html">Estudiantes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- PORTADA -->
+        <div class="bg-body-tertiary border-bottom py-5">
+            <div class="container text-center py-4">
+
+                <i class="bi bi-moisture text-primary display-1"></i>
+
+                <span class="badge text-bg-primary d-block mx-auto mt-3 mb-3" style="width: fit-content;">
+                    Internet de las Cosas
+                </span>
+
+                <h1 class="display-4 fw-bold mb-3">
+                    HidroMon
+                </h1>
+
+                <p class="lead text-body-secondary mb-0 mx-auto" style="max-width: 700px;">
+                    Sistema de Monitoreo de Humedad IoT
+                </p>
+
+            </div>
+        </div>
+
+        <!-- DESCRIPCIÓN -->
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+
+                    <div class="card border-0 shadow rounded-4">
+                        <div class="card-body p-4 p-md-5">
+
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <div class="bg-primary bg-opacity-10 rounded-3 p-3">
+                                    <i class="bi bi-info-circle-fill text-primary fs-3"></i>
+                                </div>
+                                <div>
+                                    <h2 class="fw-bold mb-1">Descripción del proyecto</h2>
+                                    <p class="text-body-secondary mb-0">
+                                        Qué resuelve HidroMon y para quién
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p class="fs-5 mb-0">
+                                Plataforma centralizada que recolecta y gestiona datos de
+                                <strong>humedad de suelo</strong> y <strong>humedad ambiental</strong>
+                                provenientes de sensores IoT distribuidos en cultivos, permitiendo a
+                                agricultores y administradores visualizar niveles en tiempo real,
+                                definir umbrales críticos y generar alertas automáticas ante
+                                condiciones de riesgo.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- FUNCIONALIDADES -->
+        <div class="container pb-5">
+
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Funcionalidades principales</h2>
+                <p class="text-body-secondary">
+                    Lo que el sistema permite hacer al usuario
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-broadcast-pin text-primary fs-1"></i>
+                            <h5 class="fw-bold mt-3">Recolección de datos</h5>
+                            <p class="text-body-secondary mb-0">
+                                Captura de mediciones desde sensores IoT distribuidos
+                                en las zonas de cultivo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-speedometer2 text-primary fs-1"></i>
+                            <h5 class="fw-bold mt-3">Monitoreo en tiempo real</h5>
+                            <p class="text-body-secondary mb-0">
+                                Visualización de los niveles actuales de humedad de
+                                suelo y humedad ambiental.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-sliders text-primary fs-1"></i>
+                            <h5 class="fw-bold mt-3">Umbrales críticos</h5>
+                            <p class="text-body-secondary mb-0">
+                                Definición de los valores mínimos y máximos aceptables
+                                para cada cultivo o zona.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-bell-fill text-primary fs-1"></i>
+                            <h5 class="fw-bold mt-3">Alertas automáticas</h5>
+                            <p class="text-body-secondary mb-0">
+                                Notificación al usuario cuando una lectura supera un
+                                umbral y se presenta riesgo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ENTIDADES -->
+        <div class="bg-body-tertiary border-top border-bottom py-5">
+            <div class="container">
+
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold">Entidades del sistema</h2>
+                    <p class="text-body-secondary">
+                        Los elementos que modela HidroMon
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Sensor de Humedad -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-thermometer-half text-primary fs-1"></i>
+
+                                <h4 class="fw-bold mt-3">Sensor de Humedad</h4>
+
+                                <p class="text-body-secondary">
+                                    Dispositivo IoT que realiza las mediciones y las
+                                    envía a la plataforma.
+                                </p>
+
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge text-bg-secondary">Suelo</span>
+                                    <span class="badge text-bg-secondary">Ambiental</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cultivo / Zona -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-geo-alt-fill text-primary fs-1"></i>
+
+                                <h4 class="fw-bold mt-3">Cultivo / Zona de Monitoreo</h4>
+
+                                <p class="text-body-secondary mb-0">
+                                    Área geográfica delimitada que agrupa uno o varios
+                                    sensores y define sus umbrales.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lectura de Humedad -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-graph-up text-primary fs-1"></i>
+
+                                <h4 class="fw-bold mt-3">Lectura de Humedad</h4>
+
+                                <p class="text-body-secondary">
+                                    Cada medición registrada por un sensor, con su valor
+                                    y su marca de tiempo.
+                                </p>
+
+                                <span class="badge text-bg-secondary">Historial</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Usuario -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-people-fill text-primary fs-1"></i>
+
+                                <h4 class="fw-bold mt-3">Usuario</h4>
+
+                                <p class="text-body-secondary">
+                                    Persona que consulta la información y gestiona la
+                                    configuración del sistema.
+                                </p>
+
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge text-bg-secondary">Agricultor</span>
+                                    <span class="badge text-bg-secondary">Administrador</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alerta -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-exclamation-triangle-fill text-primary fs-1"></i>
+
+                                <h4 class="fw-bold mt-3">Alerta</h4>
+
+                                <p class="text-body-secondary">
+                                    Aviso generado automáticamente cuando una lectura
+                                    queda fuera del rango definido.
+                                </p>
+
+                                <span class="badge text-bg-secondary">Umbral superado</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- INTEGRANTES -->
+        <div class="container py-5">
+
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Integrantes</h2>
+                <p class="text-body-secondary">
+                    Equipo de desarrollo del proyecto
+                </p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+
+                <!-- Leider Fabian Chipu Erazo -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card h-100 shadow-sm rounded-4 overflow-hidden" style="width: 18rem;">
+
+                        <div class="ratio ratio-1x1 bg-body-tertiary">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="bi bi-person-circle text-body-secondary display-1"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Leider Fabian Chipu Erazo</h5>
+                            <p class="card-text text-body-secondary">
+                                Estudiante de Ingeniería de Software
+                            </p>
+                            <span class="btn btn-outline-secondary disabled mt-auto" aria-disabled="true">
+                                Perfil pendiente
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Miguel Francisco Ruales -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card h-100 shadow-sm rounded-4 overflow-hidden" style="width: 18rem;">
+
+                        <div class="ratio ratio-1x1 bg-body-tertiary">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="bi bi-person-circle text-body-secondary display-1"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Miguel Francisco Ruales</h5>
+                            <p class="card-text text-body-secondary">
+                                Estudiante de Ingeniería de Software
+                            </p>
+                            <span class="btn btn-outline-secondary disabled mt-auto" aria-disabled="true">
+                                Perfil pendiente
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Juan José Rueda -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card h-100 shadow-sm rounded-4 overflow-hidden" style="width: 18rem;">
+
+                        <div class="ratio ratio-1x1 bg-body-tertiary">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="bi bi-person-circle text-body-secondary display-1"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Juan José Rueda</h5>
+                            <p class="card-text text-body-secondary">
+                                Estudiante de Ingeniería de Software
+                            </p>
+                            <span class="btn btn-outline-secondary disabled mt-auto" aria-disabled="true">
+                                Perfil pendiente
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Diego Armando Pinta -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card h-100 shadow-sm rounded-4 overflow-hidden" style="width: 18rem;">
+
+                        <div class="ratio ratio-1x1">
+                            <img src="Perfiles/DAPC.JPG" class="object-fit-cover"
+                                alt="Diego Armando Pinta Cuasquen">
+                        </div>
+
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Diego Armando Pinta</h5>
+                            <p class="card-text text-body-secondary">
+                                Ingeniería Electrónica e Ingeniería de Software
+                            </p>
+                            <a href="../../estudiantes/Diego-Pinta.html" class="btn btn-primary mt-auto">
+                                Ver perfil
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- VOLVER -->
+        <div class="container pb-5 text-center">
+            <a href="../../proyectos.html" class="btn btn-outline-primary rounded-pill px-4">
+                <i class="bi bi-arrow-left"></i>
+                Volver a Proyectos
+            </a>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
