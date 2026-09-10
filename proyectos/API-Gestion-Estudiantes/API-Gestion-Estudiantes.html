@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API de Gestión de Estudiantes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">5B</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../estudiantes.html">Estudiantes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- PORTADA -->
+        <div class="bg-body-tertiary border-bottom py-5">
+            <div class="container text-center py-4">
+
+                <i class="bi bi-database text-primary display-1"></i>
+
+                <span class="badge text-bg-primary d-block mx-auto mt-3 mb-3" style="width: fit-content;">
+                    NestJS · PostgreSQL · TypeORM
+                </span>
+
+                <h1 class="display-4 fw-bold mb-3">
+                    API de Gestión de Estudiantes
+                </h1>
+
+                <p class="lead text-body-secondary mb-0 mx-auto" style="max-width: 700px;">
+                    API REST para la gestión de estudiantes, cursos e inscripciones en una institución educativa
+                </p>
+
+            </div>
+        </div>
+
+        <!-- DESCRIPCIÓN -->
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+
+                    <div class="card border-0 shadow rounded-4">
+                        <div class="card-body p-4 p-md-5">
+
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <div class="bg-primary bg-opacity-10 rounded-3 p-3">
+                                    <i class="bi bi-info-circle-fill text-primary fs-3"></i>
+                                </div>
+                                <div>
+                                    <h2 class="fw-bold mb-1">Descripción del proyecto</h2>
+                                    <p class="text-body-secondary mb-0">
+                                        Qué resuelve la API y para quién
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p class="fs-5 mb-0">
+                                API REST desarrollada con <strong>NestJS</strong> que permite gestionar
+                                <strong>estudiantes</strong>, <strong>cursos</strong> e
+                                <strong>inscripciones</strong> en una institución educativa. La API ofrece
+                                endpoints bien estructurados para realizar operaciones CRUD, validaciones
+                                de datos con <strong>class-validator</strong>, persistencia en
+                                <strong>PostgreSQL</strong> usando <strong>TypeORM</strong> y documentación
+                                interactiva mediante <strong>Swagger</strong>.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- FUNCIONALIDADES -->
+        <div class="container pb-5">
+
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Funcionalidades principales</h2>
+                <p class="text-body-secondary">
+                    Operaciones que ofrece la API
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-person-plus-fill text-primary fs-1"></i>
+                            <h5 class="fw-bold mt-3">Gestión de Estudiantes</h5>
+                            <p class="text-body-secondary mb-0">
+                                Crear, listar, actualizar y eliminar estudiantes del sistema.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-book text-primary fs-1"></i>
+                            <h5 class="fw-bold mt-3">Gestión de Cursos</h5>
+                            <p class="text-body-secondary mb-0">
+                                Crear y listar los cursos disponibles para inscripción.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-link-45deg text-primary fs-1"></i>
+                            <h5 class="fw-bold mt-3">Inscripciones</h5>
+                            <p class="text-body-secondary mb-0">
+                                Relacionar estudiantes con cursos y consultar inscripciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-shield-check text-primary fs-1"></i>
+                            <h5 class="fw-bold mt-3">Validaciones</h5>
+                            <p class="text-body-secondary mb-0">
+                                Validación de datos de entrada con class-validator.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ENDPOINTS -->
+        <div class="bg-body-tertiary border-top border-bottom py-5">
+            <div class="container">
+
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold">Endpoints de la API</h2>
+                    <p class="text-body-secondary">
+                        Rutas disponibles para consumir el servicio
+                    </p>
+                </div>
+
+                <div class="row justify-content-center g-4">
+
+                    <!-- Estudiantes -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-people-fill text-primary fs-1"></i>
+
+                                <h4 class="fw-bold mt-3">Estudiantes</h4>
+
+                                <ul class="list-unstyled text-body-secondary mb-0">
+                                    <li><span class="badge text-bg-success">POST</span> /students</li>
+                                    <li><span class="badge text-bg-primary">GET</span> /students</li>
+                                    <li><span class="badge text-bg-primary">GET</span> /students/:id</li>
+                                    <li><span class="badge text-bg-warning text-dark">PATCH</span> /students/:id</li>
+                                    <li><span class="badge text-bg-danger">DELETE</span> /students/:id</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cursos -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-journal-bookmark-fill text-primary fs-1"></i>
+
+                                <h4 class="fw-bold mt-3">Cursos</h4>
+
+                                <ul class="list-unstyled text-body-secondary mb-0">
+                                    <li><span class="badge text-bg-success">POST</span> /courses</li>
+                                    <li><span class="badge text-bg-primary">GET</span> /courses</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inscripciones -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-diagram-3-fill text-primary fs-1"></i>
+
+                                <h4 class="fw-bold mt-3">Inscripciones</h4>
+
+                                <ul class="list-unstyled text-body-secondary mb-0">
+                                    <li><span class="badge text-bg-success">POST</span> /enrollments</li>
+                                    <li><span class="badge text-bg-primary">GET</span> /students/:id/courses</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- TECNOLOGÍAS -->
+        <div class="container py-5">
+
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Tecnologías utilizadas</h2>
+                <p class="text-body-secondary">
+                    Stack tecnológico del proyecto
+                </p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-hexagon-fill text-primary fs-1"></i>
+                            <h6 class="fw-bold mt-2 mb-0">NestJS</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-database-fill text-primary fs-1"></i>
+                            <h6 class="fw-bold mt-2 mb-0">PostgreSQL</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-arrow-left-right text-primary fs-1"></i>
+                            <h6 class="fw-bold mt-2 mb-0">TypeORM</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-check-circle text-primary fs-1"></i>
+                            <h6 class="fw-bold mt-2 mb-0">class-validator</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-file-earmark-text text-primary fs-1"></i>
+                            <h6 class="fw-bold mt-2 mb-0">Swagger</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ARQUITECTURA -->
+        <div class="bg-body-tertiary border-top border-bottom py-5">
+            <div class="container">
+
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold">Arquitectura</h2>
+                    <p class="text-body-secondary">
+                        Estructura de capas de la aplicación
+                    </p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-sm rounded-4">
+                            <div class="card-body p-4">
+
+                                <div class="d-flex flex-column gap-3">
+
+                                    <div class="d-flex align-items-center gap-3">
+                                        <span class="badge text-bg-primary rounded-pill px-3 py-2">1</span>
+                                        <div>
+                                            <h5 class="fw-bold mb-0">Modules</h5>
+                                            <small class="text-body-secondary">Organización por dominios (Students, Courses, Enrollments)</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-3">
+                                        <span class="badge text-bg-primary rounded-pill px-3 py-2">2</span>
+                                        <div>
+                                            <h5 class="fw-bold mb-0">Controllers</h5>
+                                            <small class="text-body-secondary">Manejo de rutas HTTP y respuestas</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-3">
+                                        <span class="badge text-bg-primary rounded-pill px-3 py-2">3</span>
+                                        <div>
+                                            <h5 class="fw-bold mb-0">Services</h5>
+                                            <small class="text-body-secondary">Lógica de negocio y validaciones</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-3">
+                                        <span class="badge text-bg-primary rounded-pill px-3 py-2">4</span>
+                                        <div>
+                                            <h5 class="fw-bold mb-0">Repositories</h5>
+                                            <small class="text-body-secondary">Acceso a datos con TypeORM</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VOLVER -->
+        <div class="container py-5 text-center">
+            <a href="../../proyectos.html" class="btn btn-outline-primary rounded-pill px-4">
+                <i class="bi bi-arrow-left"></i>
+                Volver a Proyectos
+            </a>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
