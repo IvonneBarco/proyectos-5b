@@ -42,6 +42,10 @@
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
             crossorigin="anonymous"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -182,29 +186,38 @@ feature/card-estudiante
                         </div>
                     </div>
                 </div>
-                <div class="col mt-4">
+                <!-- HidroMon - Sistema de Monitoreo de Humedad IoT -->
+                <div class="col">
                     <div class="card shadow h-100" style="width: 18rem">
-                        <img
-                            src="proyectos/LabHealth/LabHealth.jpeg"
-                            class="card-img-top"
-                            style="height: 200px; object-fit: cover"
-                            alt="..."
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">LabHealth API</h5>
+                        <div
+                            class="bg-primary bg-opacity-10 d-flex align-items-center justify-content-center"
+                            style="height: 200px"
+                        >
+                            <i class="bi bi-moisture text-primary display-1"></i>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">HidroMon</h5>
                             <p class="card-text">
-                                Sistema orientado a la recepción e interpretación
-                                de resultados de exámenes de laboratorio clínico.
-                                La aplicación permite consultar pacientes,
-                                órdenes de laboratorio, resultados y generar
-                                alertas cuando un valor se encuentra fuera de
-                                su rango de referencia.           
+                                Sistema de monitoreo de humedad IoT que recolecta
+                                datos de humedad de suelo y ambiental en cultivos,
+                                permite definir umbrales críticos y genera alertas
+                                automáticas ante condiciones de riesgo.
                             </p>
-                            <a
-                                href="./proyectos/labhealth/LabHealth.html"
-                                class="btn btn-primary"
-                                >Mas Informacion
-                            </a>
+                            <p class="card-text">
+                                <strong>Componentes:</strong><br />
+                                Sensor de Humedad<br />
+                                Cultivo / Zona de Monitoreo<br />
+                                Lectura de Humedad<br />
+                                Usuario<br />
+                                Alerta
+                            </p>
+                            <div class="mt-auto">
+                                <a
+                                    href="./proyectos/Hidromon/HidroMon.html"
+                                    class="btn btn-primary w-100"
+                                    >Mas Informacion</a
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
