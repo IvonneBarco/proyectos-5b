@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
@@ -34,7 +35,7 @@
         </div>
     </nav>
     <div class="container py-5">
-        <div class="container text-center py-5 d-flex flex-column align-items-center">
+        <div class="container text-center py-5 d-flex flex-column align-items-center" >
             <img src="../Card-JuanCuaran/Foto JC.jpeg" class="img-fluid rounded-circle border border-dark w-25"
                 alt="Foto de Perfil">
             <h3 class="text-center lh-base">Juan Esteban Cuaran Santander</h3>
@@ -109,7 +110,11 @@
         </div>
 
         <div class="d-grid gap-2 col-2 mx-auto">
-            <a href="javascript:void(0)" onclick="history.back()" class="btn btn-outline-dark">Regresar</a>
+            <a href="javascript:void(0)" onclick="history.back()"
+                class="btn btn-outline-dark button personalized position-relative overflow-hidden"
+                onmouseenter="this.classList.add('hover')" onmouseleave="this.classList.remove('hover')">
+                <span class="position-relative z-3">Regresar</span>
+            </a>
         </div>
     </div>
 </body>
