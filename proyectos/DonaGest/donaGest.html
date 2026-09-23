@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DonaGest - API de Gestión de Donaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">5B</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../estudiantes.html">Estudiantes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- PORTADA -->
+        <div class="bg-body-tertiary border-bottom py-5">
+            <div class="container text-center py-4">
+
+                <i class="bi bi-box2-heart text-primary display-1"></i>
+
+                <span class="badge text-bg-primary d-block mx-auto mt-3 mb-3" style="width: fit-content;">
+                    API REST
+                </span>
+
+                <h1 class="display-4 fw-bold mb-3">
+                    DonaGest
+                </h1>
+
+                <p class="lead text-body-secondary mb-0 mx-auto" style="max-width: 700px;">
+                    Gestión y control de donaciones destinadas a zonas afectadas por desastres naturales
+                </p>
+
+            </div>
+        </div>
+
+        <!-- DESCRIPCIÓN -->
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+
+                    <div class="card border-0 shadow rounded-4">
+                        <div class="card-body p-4 p-md-5">
+
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <div class="bg-primary bg-opacity-10 rounded-3 p-3">
+                                    <i class="bi bi-info-circle-fill text-primary fs-3"></i>
+                                </div>
+                                <div>
+                                    <h2 class="fw-bold mb-1">Descripción del proyecto</h2>
+                                    <p class="text-body-secondary mb-0">
+                                        Qué resuelve DonaGest y para quién
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p class="fs-5 mb-0">
+                                API de gestión de donaciones para desastres naturales: 
+                                permite <strong>registrar donaciones masivas</strong>, controlar el 
+                                <strong>stock de productos</strong> recibidos, identificar quién realiza 
+                                cada donación, registrar las cantidades donadas y 
+                                gestionar el destino de los recursos hacia las zonas 
+                                afectadas.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- FUNCIONALIDADES -->
+        <div class="container pb-5">
+
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Funcionalidades principales</h2>
+                <p class="text-body-secondary">
+                    Lo que el sistema permite hacer al usuario
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-person-plus text-primary fs-1"></i>
+                            <h5 class="fw-bold mt-3">Registrar donaciones</h5>
+                            <p class="text-body-secondary mb-0">
+                                Permite registrar quién realiza una donación, los productos entregados y las cantidades correspondientes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-box-seam text-primary fs-1"></i>
+                            <h5 class="fw-bold mt-3">Control de stock</h5>
+                            <p class="text-body-secondary mb-0">
+                                Permite controlar los productos recibidos y las cantidades disponibles para su posterior distribución.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-geo-alt text-primary fs-1"></i>
+                            <h5 class="fw-bold mt-3">Gestionar destinos</h5>
+                            <p class="text-body-secondary mb-0">
+                                Permite registrar y gestionar las zonas afectadas que recibirán los recursos disponibles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-truck text-primary fs-1"></i>
+                            <h5 class="fw-bold mt-3">Gestionar entregas</h5>
+                            <p class="text-body-secondary mb-0">
+                                Permite registrar el destino de los recursos y controlar la entrega de productos a las zonas afectadas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ENTIDADES -->
+        <div class="bg-body-tertiary border-top border-bottom py-5">
+            <div class="container">
+
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold">Entidades del sistema</h2>
+                    <p class="text-body-secondary">
+                        Los elementos que modela DonaGest
+                    </p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Producto -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-box text-primary fs-1"></i>
+
+                                <h4 class="fw-bold mt-3">Producto</h4>
+
+                                <p class="text-body-secondary">
+                                    Representa los productos que pueden ser recibidos como donación.
+                                </p>
+
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge text-bg-secondary">Categoría</span>
+                                    <span class="badge text-bg-secondary">Descripción</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inventario -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-boxes text-primary fs-1"></i>
+
+                                <h4 class="fw-bold mt-3">Inventario</h4>
+
+                                <p class="text-body-secondary mb-4">
+                                    Controla las cantidades disponibles de los productos recibidos.
+                                </p>
+
+                                <div class="d-flex flex-wrap gap-2 mt-auto">
+                                    <span class="badge text-bg-secondary">Stock</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zona Afectada -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-geo-alt-fill text-primary fs-1"></i>
+
+                                <h4 class="fw-bold mt-3">Zona afectada</h4>
+
+                                <p class="text-body-secondary">
+                                    Representa el lugar afectado que necesita recibir los recursos.
+                                </p>
+
+                                <span class="badge text-bg-secondary">Ubicación</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Entrega -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-truck text-primary fs-1"></i>
+
+                                <h4 class="fw-bold mt-3">Entrega</h4>
+
+                                <p class="text-body-secondary">
+                                    Registra la distribución de recursos hacia una zona afectada.
+                                </p>
+
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge text-bg-secondary">Fecha</span>
+                                    <span class="badge text-bg-secondary">Estado</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- INTEGRANTES -->
+        <div class="container py-5">
+
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Integrantes</h2>
+                <p class="text-body-secondary">
+                    Equipo de desarrollo del proyecto
+                </p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+
+                <!-- María José -->
+                <div class="col-12 col-md-4 d-flex justify-content-center">
+                    <div class="card h-100 shadow-sm rounded-4 overflow-hidden" style="width: 18rem;">
+
+                        <div class="ratio ratio-1x1 bg-body-tertiary">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="bi bi-person-circle text-body-secondary display-1"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">María José De La Cruz</h5>
+                            <p class="card-text text-body-secondary">
+                                Estudiante de Ingeniería de Software
+                            </p>
+                            <a href="../../estudiantes/majo.html" class="btn btn-primary mt-auto">
+                                Ver perfil
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- José Manuel -->
+                <div class="col-12 col-md-4 d-flex justify-content-center">
+                    <div class="card h-100 shadow-sm rounded-4 overflow-hidden" style="width: 18rem;">
+
+                        <div class="ratio ratio-1x1 bg-body-tertiary">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="bi bi-person-circle text-body-secondary display-1"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">José Manuel Campo</h5>
+                            <p class="card-text text-body-secondary">
+                                Estudiante de Ingeniería de Software
+                            </p>
+                            <a href="../../estudiantes/josecampo.html" class="btn btn-primary mt-auto">
+                                Ver perfil
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Iván Daniel -->
+                <div class="col-12 col-md-4 d-flex justify-content-center">
+                    <div class="card h-100 shadow-sm rounded-4 overflow-hidden" style="width: 18rem;">
+
+                        <div class="ratio ratio-1x1 bg-body-tertiary">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="bi bi-person-circle text-body-secondary display-1"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Iván Daniel Igua</h5>
+                            <p class="card-text text-body-secondary">
+                                Estudiante de Ingeniería de Software
+                            </p>
+                            <a href="../../estudiantes/DanielIgua.html" class="btn btn-primary mt-auto">
+                                Ver perfil
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- VOLVER -->
+        <div class="container pb-5 text-center">
+            <a href="../../proyectos.html" class="btn btn-outline-primary rounded-pill px-4">
+                <i class="bi bi-arrow-left"></i>
+                Volver a Proyectos
+            </a>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
